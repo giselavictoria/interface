@@ -1,0 +1,271 @@
+body {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #eded4c;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
+  /* main container */
+  .wrapper {
+    position: absolute;
+    width: 1276px;
+    height: 698px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-shadow: 6px 4px 6px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  
+  /* sidebar */
+  .sidebar {
+    position: absolute;
+    width: 276px;
+    height: 698px;
+    background: #151515;
+    border-radius: 10px 0px 0px 10px;
+  }
+  
+  /* sidebar title */
+  .titleSidebar {
+    display: flex;
+    height: 80px;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .svgTitle {
+    left: 111px;
+    top: 186px;
+    fill: #c4c4c4;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .titleSidebar > h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    color: #f1f1f1;
+  }
+  
+  /* sidebar nav*/
+  .navSidebar > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    padding-left: 0px;
+    box-sizing: border-box;
+  }
+  
+  .navSidebar > ul li {
+    list-style: none;
+  }
+  
+  .navSidebar > ul li a {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    color: #f1f1f1;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+  
+  .navSidebar > ul li a:hover {
+    height: 50px;
+    background-color: #420bd8;
+    color: #f1f1f1;
+  }
+  
+  .navSidebar > ul span {
+    box-sizing: border-box;
+  }
+  
+  /* sidebar nav svgs*/
+  #logo .cls-1 {
+    fill: #4b03de;
+  }
+  
+  #logo .cls-2 {
+    fill: #fff;
+  }
+  
+  #logo .cls-1:hover {
+    fill: #a1f14c;
+  }
+  
+  #ajustes .cls-1 {
+    fill: #f1f1f1;
+  }
+  
+  #facturacion .cls-1 {
+    fill: #f1f1f1;
+  }
+  
+  #proyectos .cls-1 {
+    fill: #f1f1f1;
+  }
+  
+  #integraciones .cls-1 {
+    fill: #f1f1f1;
+  }
+  
+  #miembros .cls-1 {
+    fill: #f1f1f1;
+  }
+  
+  /* main container */
+  .mainContent {
+    position: absolute;
+    width: 1011px;
+    height: 698px;
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%, -100%);
+    background-color: #f1f1f1;
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  /* main content bar */
+  .titleMain {
+    display: flex;
+    height: 80px;
+    margin-top: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #151515;
+  }
+  
+  .titleMain > img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .titleMain > i {
+    color: #420bd8;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .titleMain > i:hover {
+    color: #380e72;
+    cursor: pointer;
+  }
+  
+  .titleMain > span {
+    margin-right: 20px;
+  }
+  
+  .grow {
+    transition: all 0.2s ease-in-out;
+  }
+  .grow:hover {
+    transform: scale(1.1);
+  }
+  
+  /* bottom content*/
+  .bottomContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .estatus {
+    padding-left: 40px;
+    padding-bottom: 50px;
+    color: #808080;
+  }
+  
+  .bottomContent > span {
+    padding-left: 40px;
+    color: #808080;
+  }
+  
+  .estatus > button {
+    width: 74px;
+    height: 29px;
+    background: #a1f14c;
+    border-radius: 6px;
+    border: none;
+    color: #151515;
+    margin-left: 10px;
+  }
+  
+  .estatus > button:hover {
+    background: #420bd8;
+    color: #f1f1f1;
+  }
+  
+  /* users table*/
+  .flex {
+    display: flex;
+  }
+  
+  table {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 30px;
+  }
+  
+  table th {
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b0b0b0;
+  }
+  
+  table td {
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #b0b0b0;
+  }
+  
+  td img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  td i {
+    padding-right: 5px;
+  }
+  
+  .green {
+    color: green;
+    cursor: pointer;
+  }
+  
+  .red {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .blue {
+    color: blue;
+    cursor: pointer;
+  }
+  
